@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* A Modern CSS Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* -------------- ブレークポイント作成 ここから ---------------- */
+/* -------------- ブレークポイント作成 ここまで ---------------- */
+/* -------------- calc mixin ここから ---------------- */
+/* -------------- calc mixin ここまで ----------------	*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  color: black;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+main {
+  display: block;
+}
+
+.wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .inner {
+    width: auto;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none !important;
+  }
+}
+
+/* =======================================================
+
+  snow
+
+======================================================== */
+.snow {
+  background-color: #9c9c9c;
+}
+
+.snow .wrapper {
+  max-width: 1200px;
+  padding: 0;
+  height: 70vh;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .snow .wrapper {
+    height: 90vh;
+  }
+}
+
+.title_block {
+  position: absolute;
+  top: 45%;
+  left: 9%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  .title_block {
+    left: 4%;
+  }
+}
+
+.title_block h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 8.5rem;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .title_block h1 {
+    color: #6e543e;
+    font-size: 5.5rem;
+  }
+}
+
+.tree_wrapper {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .tree_wrapper {
+    bottom: -8px;
+  }
+}
+
+.tree_wrapper .tree {
+  height: 530px;
+  display: block;
+}
+
+.ground {
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

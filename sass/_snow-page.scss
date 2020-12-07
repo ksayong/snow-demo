@@ -1,0 +1,61 @@
+/* =======================================================
+
+  snow
+
+======================================================== */
+
+.snow {
+  background-color: rgb(156, 156, 156);
+  .wrapper {
+    max-width: 1200px;
+    padding: 0;
+    height: 70vh;
+    position: relative;
+    @include mq-down(md) {
+      height: 90vh;
+    }
+  }
+}
+
+.title_block {
+  position: absolute;
+  top: 45%;
+  left: 9%;
+  z-index: 10;
+  @include mq-down(md) {
+    left: 4%;
+  }
+
+  h1 {
+    // font-family: "Carter One", cursive;
+    font-family: "Fredericka the Great", cursive;
+    font-size: 8.5rem;
+    font-weight: 100;
+    color: #fff;
+    // color: #ddcfac;
+    letter-spacing: 5px;
+    @include mq-down(md) {
+      color: rgb(110, 84, 62);
+      font-size: 5.5rem;
+    }
+  }
+}
+
+.tree_wrapper {
+  position: absolute;
+  right: 0;
+  @include mq-down(md) {
+    bottom: -8px;
+  }
+
+  .tree {
+    height: 530px;
+    display: block;
+    @include mq-down(md) {
+    }
+  }
+}
+
+.ground {
+  background-color: #fff;
+}
