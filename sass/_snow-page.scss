@@ -44,6 +44,7 @@
 .tree_wrapper {
   position: absolute;
   right: 0;
+  bottom: 0;
   @include mq-down(md) {
     bottom: -8px;
   }
